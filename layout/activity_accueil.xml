@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_background"
+    tools:context=".Accueil">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Gare Fasan'Karana"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:scrollbars="vertical"
+        android:overScrollMode="never">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <!-- ********************** AXE SUD ******************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNordOuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="301dp"
+                        android:layout_height="109dp"
+                        app:srcCompat="@drawable/tulear" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Axe Sud"
+                        android:textColor="@color/purple_700"/>
+                    <Spinner
+                        android:id="@+id/spinner_axe_sud"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="8dp"
+                        tools:layout_editor_absoluteX="148dp"
+                        tools:layout_editor_absoluteY="66dp" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- *************************************************** -->
+
+            <!-- ****************** AXE SUD EST ******************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="301dp"
+                        android:layout_height="109dp"
+                        app:srcCompat="@drawable/manakara" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Axe Sud-Est"
+                        android:textColor="@color/purple_700"/>
+                    <Spinner
+                        android:id="@+id/spinner_axe_est"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="8dp"
+                        tools:layout_editor_absoluteX="148dp"
+                        tools:layout_editor_absoluteY="66dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- *************************************************** -->
+
+            <!-- **************** AXE SUD OUEST ******************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNordEst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="301dp"
+                        android:layout_height="109dp"
+                        app:srcCompat="@drawable/morondava" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Axe Sud Ouest"
+                        android:textColor="@color/purple_700"/>
+                    <Spinner
+                        android:id="@+id/spinner_axe_sudOuest"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="8dp"
+                        tools:layout_editor_absoluteX="148dp"
+                        tools:layout_editor_absoluteY="66dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- *************************************************** -->
+
+            <!-- ******************* AXE  OUEST ******************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="301dp"
+                        android:layout_height="109dp"
+                        app:srcCompat="@drawable/tsiroro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Axe Ouest"
+                        android:textColor="@color/purple_700"/>
+                    <Spinner
+                        android:id="@+id/spinner_axe_Ouest"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="8dp"
+                        tools:layout_editor_absoluteX="148dp"
+                        tools:layout_editor_absoluteY="66dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- *************************************************** -->
+        </GridLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
